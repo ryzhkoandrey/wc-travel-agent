@@ -1,0 +1,10 @@
+.text {
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--text-muted);
+
+    p + p {
+        margin-top: 1em;
+    }
+}
