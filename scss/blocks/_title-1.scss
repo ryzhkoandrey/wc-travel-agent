@@ -2,4 +2,19 @@
     font-weight: 700;
     font-size: 72px;
     color: var(--text-color);
+
+    &--decor {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            width: 268px;
+            height: 24px;
+            background: url('../img/discover/underline.svg') no-repeat;
+        }
+    }
 }
