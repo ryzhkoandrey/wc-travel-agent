@@ -7,7 +7,27 @@
     border-radius: 16px;
     border: 1px solid rgba(144, 144, 144, 0.3);
 
-    &__label {}
+    &__label {
+        display: grid;
+        gap: 8px;
+        padding-left: 36px;
+        background: url('../img/icons/map.svg') no-repeat 0 0;
+
+        span {
+            font-weight: 500;
+            font-size: 16px;
+        }
+    }
+
+    &__input {
+        height: 18px;
+        font-size: 14px;
+        font-weight: 450;
+
+        &::placeholder {
+            color: var(--text-muted);
+        }
+    }
 
     &__devider {
         width: 1px;

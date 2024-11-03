@@ -5,6 +5,11 @@
 @import 'global/vars';
 @import 'global/base';
 
+// libs
+
+@import '../libs/autoComplete/autoComplete.02';
+@import '../libs/autoComplete/autoComplete.02--override';
+
 // blocks
 
 @import 'blocks/none';
