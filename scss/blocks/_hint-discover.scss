@@ -1,0 +1,59 @@
+.hint-discover {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    max-width: 324px;
+    padding: 12px;
+    background: #fff;
+    box-shadow: 0 4px 34px 0 rgba(50, 75, 104, 0.17);
+    border-radius: 12px;
+
+    &__picture {
+        flex-shrink: 0;
+    }
+
+    &__img {
+        border-radius: 8px;
+    }
+
+    &__desc {
+        flex-grow: 1;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    &__rating {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1;
+
+        &::before {
+            content: '';
+            width: 17px;
+            height: 16px;
+            background: url('../img/icons/star-small.svg') no-repeat;
+        }
+    }
+
+    &__price {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+
+        i {
+            font-style: normal;
+            color: var(--accent);
+        }
+    }
+}

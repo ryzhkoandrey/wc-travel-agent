@@ -20,7 +20,21 @@
 
     &__form {}
 
-    &__picture {}
+    &__picture {
+        position: relative;
+    }
+
+    &__picture-hint {
+        position: absolute;
+        top: 90px;
+        left: 40px;
+    }
+
+    &__picture-scroll {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
 
     &__picture-img {}
 }
