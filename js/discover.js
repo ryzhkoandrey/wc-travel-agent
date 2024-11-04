@@ -287,5 +287,5 @@ const picker = new easepick.create({
     format: "HH:mm, DD/MM/YY",
     plugins: [
         "TimePlugin"
-    ]
+    ],
 })
