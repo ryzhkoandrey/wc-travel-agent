@@ -1,6 +1,26 @@
 .scroll-down {
+    position: relative;
+    display: inline-block;
 
-    &__text {}
+    &__text {
+        animation: rotation 10s linear 0s infinite;
+    }
 
-    &__icon {}
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes rotation {
+
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
