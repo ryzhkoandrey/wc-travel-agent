@@ -39,5 +39,7 @@
         color: #f0f0f0;
     }
 
-    &__form {}
+    &__form {
+        flex-grow: 1;
+    }
 }

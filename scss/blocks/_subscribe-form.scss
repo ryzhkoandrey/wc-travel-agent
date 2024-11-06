@@ -1,0 +1,37 @@
+.subscribe-form {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    &__input {
+        flex-grow: 1;
+        height: 48px;
+        padding: 12px 12px 12px 44px;
+        font-weight: 450;
+        font-size: 14px;
+        line-height: 1.5;
+        color: var(--text-color);
+        background: #fff url('../../img/icons/email.svg') no-repeat 12px;
+        border-radius: 8px;
+        border: 1px solid #fff;
+
+        &::placeholder {
+            color: var(--text-muted);
+        }
+    }
+
+    &__btn {
+        padding: 12px 24px;
+        font-weight: 450;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #fff;
+        background: #181818;
+        border-radius: 8px;
+        transition: opacity .2s ease-in;
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+}
