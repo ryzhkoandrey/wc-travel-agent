@@ -1,4 +1,28 @@
 .footer {
-    padding: 80px 120px;
+    padding: 80px 0;
+    color: #fff;
     background: #181818;
+
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
+        gap: 128px;
+    }
+
+    &__copyright {
+        display: grid;
+        gap: 24px;
+        max-width: 300px;
+        font-weight: 450;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    &__nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
+        gap: 40px;
+    }
 }
