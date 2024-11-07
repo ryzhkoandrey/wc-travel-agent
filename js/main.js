@@ -276,7 +276,7 @@ const autoCompleteJS = new autoComplete({
     searchEngine: 'strict', // strict | loose
 });
 
-// ---------- EASEPICK ----------
+// ---------- EASE PICK ----------
 
 const picker = new easepick.create({
     element: "#datepicker",
@@ -300,3 +300,7 @@ const swiper = new Swiper('.swiper', {
         nextEl: '#sliderNext',
     },
 });
+
+// ---------- SCROLLREVEAL ----------
+
+ScrollReveal().reveal('.discover');
