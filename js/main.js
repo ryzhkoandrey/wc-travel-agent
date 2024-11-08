@@ -276,7 +276,7 @@ const autoCompleteJS = new autoComplete({
     searchEngine: 'strict', // strict | loose
 });
 
-// ---------- EASE PICK ----------
+// ---------- EASEPICK ----------
 
 const picker = new easepick.create({
     element: "#datepicker",
@@ -303,4 +303,15 @@ const swiper = new Swiper('.swiper', {
 
 // ---------- SCROLLREVEAL ----------
 
-ScrollReveal().reveal('.discover');
+ScrollReveal({
+    distance: '60px',
+    duration: 2800,
+});
+
+ScrollReveal().reveal('.header, .partners', { origin: 'top' });
+
+ScrollReveal().reveal('.discover__picture-hint, .discover__title', { origin: 'left' });
+
+ScrollReveal().reveal('.discover__picture-scroll, .discover__text, .popular__controls', { origin: 'right' });
+
+ScrollReveal().reveal('.discover__form, .discover__picture-img', { origin: 'bottom' });
