@@ -20,9 +20,10 @@
 
     &__swiper {
         height: 900px;
+        overflow: initial;
 
         .swiper-slide {
-            height: 300px;
+            height: auto;
         }
     }
 }

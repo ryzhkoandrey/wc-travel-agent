@@ -290,7 +290,7 @@ const picker = new easepick.create({
     ],
 })
 
-// ---------- SWIPER - POPULAR ----------
+// ---------- SWIPER: POPULAR ----------
 
 const swiper = new Swiper('#swiper-popular', {
     slidesPerView: 4,
@@ -301,7 +301,7 @@ const swiper = new Swiper('#swiper-popular', {
     },
 });
 
-// ---------- SWIPER - TESTIMONIALS ----------
+// ---------- SWIPER: TESTIMONIALS ----------
 
 const swiper2 = new Swiper('#testimonials-col-1', {
     direction: 'vertical',
@@ -310,7 +310,7 @@ const swiper2 = new Swiper('#testimonials-col-1', {
     grabCursor: true,
     ally: false,
     freeMode: true,
-    speed: 2000,
+    speed: 5000,
     loop: true,
     autoplay: {
         delay: 0,
