@@ -290,14 +290,31 @@ const picker = new easepick.create({
     ],
 })
 
-// ---------- SWIPER ----------
+// ---------- SWIPER - POPULAR ----------
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('#swiper-popular', {
     slidesPerView: 4,
     spaceBetween: 32,
     navigation: {
         prevEl: '#sliderPrev',
         nextEl: '#sliderNext',
+    },
+});
+
+// ---------- SWIPER - TESTIMONIALS ----------
+
+const swiper2 = new Swiper('#testimonials-col-1', {
+    direction: 'vertical',
+    slidesPerView: 'auto',
+    spaceBetween: 32,
+    grabCursor: true,
+    ally: false,
+    freeMode: true,
+    speed: 2000,
+    loop: true,
+    autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
     },
 });
 

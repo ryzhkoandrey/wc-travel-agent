@@ -8,9 +8,6 @@
     }
 
     &__col {
-        display: grid;
-        gap: 32px;
-        animation: slideUp 20s linear infinite;
 
         &:nth-child(2) {
             padding-top: 100px;
@@ -20,35 +17,12 @@
             padding-top: 50px;
         }
     }
-}
 
-@keyframes slideUp {
+    &__swiper {
+        height: 900px;
 
-    0% {
-        transform: translateY(0);
-    }
-
-    95% {
-        transform: translateY(-50%);
-        opacity: 1;
-        filter: blur(0);
-    }
-
-    97% {
-        transform: translateY(-50%);
-        opacity: 0;
-        filter: blur(10px);
-    }
-
-    98% {
-        transform: translateY(0);
-        opacity: 0;
-        filter: blur(10px);
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-        filter: blur(0);
+        .swiper-slide {
+            height: 300px;
+        }
     }
 }
