@@ -292,7 +292,7 @@ const picker = new easepick.create({
 
 // ---------- SWIPER: POPULAR ----------
 
-const swiper = new Swiper('#swiper-popular', {
+const swiperPopular = new Swiper('#swiper-popular', {
     slidesPerView: 4,
     spaceBetween: 32,
     navigation: {
@@ -303,7 +303,7 @@ const swiper = new Swiper('#swiper-popular', {
 
 // ---------- SWIPER: TESTIMONIALS ----------
 
-const swiper2 = new Swiper('#testimonials-col-1', {
+const swiperTestimonials = new Swiper('#testimonials-col-1, #testimonials-col-2, #testimonials-col-3', {
     direction: 'vertical',
     slidesPerView: 'auto',
     spaceBetween: 32,
