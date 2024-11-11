@@ -9,6 +9,10 @@
         align-items: center;
         gap: 24px;
 
+        @include mediaMobile {
+            display: none;
+        }
+
         a {
             font-weight: 450;
             font-size: 16px;
@@ -26,7 +30,17 @@
         display: flex;
         align-items: center;
         gap: 12px;
+
+        @include mediaMobile {
+            display: none;
+        }
     }
 
-    &__icon {}
+    &__icon {
+        display: none;
+
+        @include mediaMobile {
+            display: block;
+        }
+    }
 }
