@@ -9,6 +9,14 @@
     <!-- css -->
     <link rel="stylesheet" href="css/main.min.css">
 
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
 </head>
 
 <body>
@@ -34,13 +42,29 @@
                     <a class="btn-signup" href="#">Sign Up</a>
                 </div>
 
+                <div class="nav__icon">
+                    <button class="mobile-nav-btn">
+                        <div class="nav-icon"></div>
+                    </button>
+                </div>
+
             </nav>
         </div>
     </header>
 
+    <div class="mobile-nav">
+        <ul class="mobile-nav__list">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#!">Services</a></li>
+            <li><a href="#!">About</a></li>
+            <li><a href="#!">Projects</a></li>
+            <li><a href="#!">Contact</a></li>
+        </ul>
+    </div>
+
     <main>
 
-        <section class="discover">
+        <section class="discover none">
             <div class="container">
                 <div class="discover__grid">
 
@@ -61,7 +85,7 @@
                                     <input id="autoCompleteCountry" class="form__input" type="text" name="country" placeholder="e.g Bali, Indonesia" autocomplete="off">
                                 </label>
                                 <div class="form__devider"></div>
-                                <label class="form__label" for="">
+                                <label class="form__label form__label--calendar" for="">
                                     <span>Date and time</span>
                                     <input id="datepicker" class="form__input" type="text" name="date" placeholder="MM/DD/YYYY" autocomplete="off">
                                 </label>
@@ -108,7 +132,7 @@
             </div>
         </section>
 
-        <section class="partners">
+        <section class="partners none">
             <div class="container">
                 <div class="partners__row">
 
@@ -126,7 +150,7 @@
             </div>
         </section>
 
-        <section class="popular">
+        <section class="popular none">
 
             <div class="container">
                 <div class="popular__top">
@@ -274,7 +298,7 @@
 
         </section>
 
-        <section class="testimonials">
+        <section class="testimonials none">
             <div class="container">
                 <div class="testimonials__grid">
 
@@ -702,7 +726,7 @@
             </div>
         </section>
 
-        <section class="subscribe">
+        <section class="subscribe none">
             <div class="container">
                 <div class="subscribe__row">
 
@@ -724,7 +748,7 @@
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer none">
         <div class="container">
             <div class="footer__row">
 

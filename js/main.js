@@ -1,3 +1,15 @@
+// ---------- MOBILE NAV ----------
+
+const navBtn = document.querySelector('.mobile-nav-btn');
+const nav = document.querySelector('.mobile-nav');
+const menuIcon = document.querySelector('.nav-icon');
+
+navBtn.onclick = function () {
+    nav.classList.toggle('mobile-nav--open');
+    menuIcon.classList.toggle('nav-icon--active');
+    document.body.classList.toggle('no-scroll');
+}
+
 // ---------- AUTOCOMPLETE ----------
 
 const countryList = [
@@ -281,7 +293,7 @@ const autoCompleteJS = new autoComplete({
 const picker = new easepick.create({
     element: "#datepicker",
     css: [
-        "https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.1/dist/index.css"
+        "libs/easepick/easepick.min.css"
     ],
     zIndex: 10,
     format: "HH:mm, DD/MM/YY",
