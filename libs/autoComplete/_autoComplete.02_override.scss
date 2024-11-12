@@ -11,6 +11,10 @@
     color: var(--text-color);
     border: none;
 
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+
     &::placeholder {
         color: var(--text-muted);
     }

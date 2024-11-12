@@ -2,6 +2,14 @@
     font-weight: 700;
     font-size: 72px;
 
+    @mixin mediaTablet () {
+        font-size: 52px;
+    }
+
+    @include mediaMobile() {
+        font-size: 32px;
+    }
+
     &--decor {
         position: relative;
 
@@ -14,6 +22,12 @@
             width: 268px;
             height: 24px;
             background: url('../img/discover/underline.svg') no-repeat;
+
+            @include mediaMobile() {
+                width: 184px;
+                height: 12px;
+                background-size: contain;
+            }
         }
     }
 }

@@ -6,6 +6,11 @@
         grid-template-columns: 1fr 1fr;
         align-items: center;
         gap: 80px;
+
+        @include mediaTablet () {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
     }
 
     &__desc {}
@@ -22,6 +27,15 @@
 
     &__picture {
         position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+        width: fit-content;
+
+        @include mediaTablet {
+            grid-row: -1 / 1;
+        }
     }
 
     &__picture-hint {
@@ -29,12 +43,31 @@
         top: 90px;
         left: 40px;
         z-index: 9;
+
+        @include mediaLaptop {
+            top: 40px;
+            left: 20px;
+        }
+
+        @include mediaMobile {
+            top: 30px;
+            left: 0;
+        }
     }
 
     &__picture-scroll {
         position: absolute;
         right: 15px;
         bottom: 20px;
+
+        @include mediaLaptop {
+            right: 0;
+            bottom: 0;
+        }
+
+        @include mediaMobile {
+            width: 30%;
+        }
     }
 
     &__picture-img {}
