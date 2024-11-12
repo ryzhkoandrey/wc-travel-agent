@@ -1,4 +1,8 @@
 .title-3 {
     font-weight: 500;
     font-size: 36px;
+
+    @include mediaMobile () {
+        font-size: 28px;
+    }
 }

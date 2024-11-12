@@ -1,7 +1,7 @@
 .container-right {
     padding-left: calc((100% - 1260px) / 2 + 30px);
 
-    @media (max-width: 1230px) {
-        padding-left: 15px;
+    @media (max-width: 1229px) {
+        padding: 0 15px;
     }
 }

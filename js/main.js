@@ -305,12 +305,20 @@ const picker = new easepick.create({
 // ---------- SWIPER: POPULAR ----------
 
 const swiperPopular = new Swiper('#swiper-popular', {
-    slidesPerView: 4,
+    slidesPerView: 1,
     spaceBetween: 32,
     navigation: {
         prevEl: '#sliderPrev',
         nextEl: '#sliderNext',
     },
+    breakpoints: {
+        425: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 4,
+        }
+    }
 });
 
 // ---------- SWIPER: TESTIMONIALS ----------
