@@ -338,6 +338,10 @@ const swiperTestimonials = new Swiper('#testimonials-col-1, #testimonials-col-2,
     },
 });
 
+if (window.innerWidth < 1023) {
+    swiperTestimonials.destroy();
+}
+
 // ---------- SCROLLREVEAL ----------
 
 ScrollReveal({

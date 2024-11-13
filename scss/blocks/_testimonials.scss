@@ -5,6 +5,10 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 32px;
+
+        @include mediaTablet() {
+            display: none;
+        }
     }
 
     &__col {
@@ -21,6 +25,10 @@
     &__swiper {
         height: 900px;
         overflow: initial;
+
+        @include mediaLaptop() {
+            height: 600px;
+        }
 
         .swiper-slide {
             height: auto;
