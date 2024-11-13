@@ -323,7 +323,9 @@ const swiperPopular = new Swiper('#swiper-popular', {
 
 // ---------- SWIPER: TESTIMONIALS ----------
 
-const swiperTestimonials = new Swiper('#testimonials-col-1, #testimonials-col-2, #testimonials-col-3', {
+// Vertical slider
+
+const swiperTestimonialsVertical = new Swiper('#testimonials-col-1, #testimonials-col-2, #testimonials-col-3', {
     direction: 'vertical',
     slidesPerView: 'auto',
     spaceBetween: 32,
@@ -338,9 +340,21 @@ const swiperTestimonials = new Swiper('#testimonials-col-1, #testimonials-col-2,
     },
 });
 
-if (window.innerWidth < 1023) {
-    swiperTestimonials.destroy();
-}
+// Horizontal slider
+
+const swiperTestimonialsHorizontal = new Swiper('#testimonials-horizontal-swiper', {
+    slidesPerView: 3,
+    spaceBetween: 32,
+    grabCursor: true,
+    ally: false,
+    freeMode: true,
+    speed: 5000,
+    loop: true,
+    autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+    },
+});
 
 // ---------- SCROLLREVEAL ----------
 
