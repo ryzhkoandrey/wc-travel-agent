@@ -34,4 +34,16 @@
             height: auto;
         }
     }
+
+    &__horizontal {
+        display: none;
+
+        @include mediaTablet() {
+            display: block;
+        }
+
+        .swiper {
+            padding: 15px 0;
+        }
+    }
 }
