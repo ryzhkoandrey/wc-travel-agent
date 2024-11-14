@@ -3,11 +3,20 @@
     color: #fff;
     background: #181818;
 
+    @include mediaMobile {
+        padding: 40px 0;
+    }
+
     &__row {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: start;
         gap: 128px;
+
+        @include mediaMobile {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
     }
 
     &__copyright {
@@ -17,6 +26,10 @@
         font-weight: 450;
         font-size: 16px;
         line-height: 1.5;
+
+        @include mediaMobile {
+            max-width: none;
+        }
     }
 
     &__nav {
@@ -24,5 +37,10 @@
         grid-template-columns: repeat(2, 1fr);
         align-items: start;
         gap: 40px;
+
+        @include mediaMobile {
+            grid-row: -1 / 1;
+            gap: 20px;
+        }
     }
 }
